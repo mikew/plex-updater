@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/mikew/plex-nose-example/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/mikew/plex-nose-example/commits/master.atom"/>
+  <title>Recent Commits to plex-nose-example:master</title>
+  <updated>2013-04-14T12:28:01-07:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4afa4d6c193b283eeb2a341e5834f9da2263e36b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/4afa4d6c193b283eeb2a341e5834f9da2263e36b"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2013-04-14T12:28:01-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m README.md
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Update README.md&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7c164c7f7d0a57f68e0d95c4e608b5ae184a12ab</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/7c164c7f7d0a57f68e0d95c4e608b5ae184a12ab"/>
+    <title>
+        add windows instructions to readme
+    </title>
+    <updated>2013-04-14T12:20:06-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m README.md
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>add windows instructions to readme&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8fc4e14885cc15f4359a6f4359fe3959d08aedcc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/8fc4e14885cc15f4359a6f4359fe3959d08aedcc"/>
+    <title>
+        windows support
+    </title>
+    <updated>2013-04-14T12:10:35-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/nose_runner.py
++ run-windows.bat
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>windows support&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1f10e9d30c0fdbd93f480686293bc36e97c9a05f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/1f10e9d30c0fdbd93f480686293bc36e97c9a05f"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2013-04-10T19:10:25-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m README.md
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Update README.md&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dd366cb5a0ff3c5535fcaa83c0fd0eee5039a5d1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/dd366cb5a0ff3c5535fcaa83c0fd0eee5039a5d1"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2013-04-10T19:06:28-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m README.md
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Update README.md&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1acd10ee5a096aaca4b16a3092c19eae24e90091</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/1acd10ee5a096aaca4b16a3092c19eae24e90091"/>
+    <title>
+        update readme
+    </title>
+    <updated>2013-04-10T19:00:49-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m README.md
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>update readme&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/082da387a51156f84742432d70130d3fd58b1cc9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/082da387a51156f84742432d70130d3fd58b1cc9"/>
+    <title>
+        commit to assert given == expected, as opposed to the reverse
+    </title>
+    <updated>2013-04-10T14:02:56-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/Services/Shared Code/test_common.py
+m Contents/Tests/test___init__.py
+m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>commit to assert given == expected, as opposed to the reverse&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5623e45c11274422b009a6b305a39ba0b707462c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/5623e45c11274422b009a6b305a39ba0b707462c"/>
+    <title>
+        eqL, eqF and eqcb helpers for tests
+    </title>
+    <updated>2013-04-10T14:02:04-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Libraries/Shared/plex_nose.py
+m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>eqL, eqF and eqcb helpers for tests&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/33cdda2034fad90d1a09cf46888c098c3bab2bb5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/33cdda2034fad90d1a09cf46888c098c3bab2bb5"/>
+    <title>
+        adds spec from pinocchio
+    </title>
+    <updated>2013-04-10T14:01:00-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>+ Contents/Libraries/Shared/spec.py
+m Contents/Tests/nose_runner.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>adds spec from pinocchio&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/38fbe1d81bc20075e8ffdfb070041ef518966d34</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/38fbe1d81bc20075e8ffdfb070041ef518966d34"/>
+    <title>
+        actually run the tests under patch
+    </title>
+    <updated>2013-04-09T20:19:52-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/Services/Shared Code/test_common.py
+m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>actually run the tests under patch&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d16bcc008ff7fef724f38944d4ce85af88b8d03d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/d16bcc008ff7fef724f38944d4ce85af88b8d03d"/>
+    <title>
+        use mock.patch.object
+    </title>
+    <updated>2013-04-09T20:13:45-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/Services/Shared Code/test_common.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>use mock.patch.object&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f54eba1c9495c485167048e63fef41b2843c38c9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/f54eba1c9495c485167048e63fef41b2843c38c9"/>
+    <title>
+        use mock.patch.object
+    </title>
+    <updated>2013-04-09T20:09:22-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>use mock.patch.object&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a5b434fe81e27ba592b03745d3b53ac52897e661</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/a5b434fe81e27ba592b03745d3b53ac52897e661"/>
+    <title>
+        make nose_runner exit cleanly
+    </title>
+    <updated>2013-04-09T20:09:05-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/nose_runner.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>make nose_runner exit cleanly&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9dfdd7f531d11532f90cc1575b7fcdd6454952ec</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/9dfdd7f531d11532f90cc1575b7fcdd6454952ec"/>
+    <title>
+        fix tutorial routes breaking /env endpoint
+    </title>
+    <updated>2013-04-09T13:10:30-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Code/tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>fix tutorial routes breaking /env endpoint&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d16fa25cec42e653c07b5ef8487cbf7695cca6d9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/d16fa25cec42e653c07b5ef8487cbf7695cca6d9"/>
+    <title>
+        test against Callback directly
+    </title>
+    <updated>2013-04-09T12:57:24-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>test against Callback directly&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fc1061cff1e3f8c05b41f676ee1890caed28ee5f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/fc1061cff1e3f8c05b41f676ee1890caed28ee5f"/>
+    <title>
+        improve test coverage, fix typos, move some methods to common.pys
+    </title>
+    <updated>2013-04-09T12:51:22-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Code/__init__.py
+m Contents/Code/tutorial.py
++ Contents/Services/Shared Code/common.pys
+m Contents/Services/Shared Code/consts.pys
+m Contents/Services/URL/Gamespot/ServiceCode.pys
++ Contents/Tests/Services/Shared Code/test_common.py
+- Contents/Tests/Services/Shared Code/test_consts.py
+m Contents/Tests/mosaic.html
+m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>improve test coverage, fix typos, move some methods to common.pys&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2d02d5252b0d84d5ea15eca7ae4921b2685cf952</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/2d02d5252b0d84d5ea15eca7ae4921b2685cf952"/>
+    <title>
+        actually plays videos
+    </title>
+    <updated>2013-04-08T22:07:51-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Services/URL/Gamespot/ServiceCode.pys
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>actually plays videos&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/faf87189c1d1325144ba7883982fba8a545c505f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/faf87189c1d1325144ba7883982fba8a545c505f"/>
+    <title>
+        move test_url_for_section to test_consts
+    </title>
+    <updated>2013-04-08T22:07:36-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>+ Contents/Tests/Services/Shared Code/test_consts.py
+m Contents/Tests/test_tutorial.py
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>move test_url_for_section to test_consts&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/27d4b6219e2658528655582d402b46f7b56a99cd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/27d4b6219e2658528655582d402b46f7b56a99cd"/>
+    <title>
+        support subdirectories in Guardfile, run tests for Services
+    </title>
+    <updated>2013-04-08T22:06:13-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Guardfile
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>support subdirectories in Guardfile, run tests for Services&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ebd1b46d7dac0ca2522772afcc7e197ce5ff732a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mikew/plex-nose-example/commit/ebd1b46d7dac0ca2522772afcc7e197ce5ff732a"/>
+    <title>
+        move what we can to consts.py
+    </title>
+    <updated>2013-04-08T21:22:27-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/8384ce03f141ef0db08ac8f185139059?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <author>
+      <name>mikew</name>
+      <uri>https://github.com/mikew</uri>
+    </author>
+    <content type="html">
+      &lt;pre>m Contents/Code/tutorial.py
++ Contents/Services/Shared Code/consts.pys
+m Contents/Services/URL/Gamespot/ServiceCode.pys
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>move what we can to consts.py&lt;/pre>
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,4 @@
+*.pyc
+.bundle
+test.log*
+Gemfile.lock
