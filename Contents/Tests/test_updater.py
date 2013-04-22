@@ -102,7 +102,6 @@ class TestGithubStrategy(plex_nose.TestCase):
 
         feed = RSS.FeedFromString(atom_feed)
 
-        @mock.patch.object(updater, 'updated_at', return_value = None)
         @mock.patch.object(RSS, 'FeedFromURL', return_value = feed)
         def test(*a):
             subject = updater.GithubStrategy('owner/repo')
@@ -113,7 +112,30 @@ class TestGithubStrategy(plex_nose.TestCase):
             eq_(actual, expected)
         test()
 
-    def test_extracts_code():
-        archive = Archive.Zip(example_archive)
-        for f in archive.Names():
-            print f
+    def test_perform_update_extracts_code():
+        import mock
+
+        @mock.patch.object(Archive, 'ZipFromURL', return_value = Archive.Zip(example_archive))
+        @mock.patch.object(Core.storage, 'ensure_dirs')
+        @mock.patch.object(Core.storage, 'save')
+        def test(file_mock, dir_mock, *a):
+            call    = mock.call
+            subject = updater.GithubStrategy('owner/repo')
+            subject.perform_update()
+
+            # makes dirs
+            ok_(call(Core.bundle_path + '/') in dir_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/dir/') in dir_mock.call_args_list)
+
+            # makes files
+            ok_(call(Core.bundle_path + '/file', '') in file_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/dir/file', '') in file_mock.call_args_list)
+
+            # skips hidden dirs
+            ok_(call(Core.bundle_path + '/hidden-dir/') not in dir_mock.call_args_list)
+
+            # skips hidden files
+            ok_(call(Core.bundle_path + '/.hidden', '') not in file_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/.hidden-dir/file', '') not in file_mock.call_args_list)
+
+        test()

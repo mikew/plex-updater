@@ -15,6 +15,24 @@ class GithubStrategy(object):
 
         return updated.replace(tzinfo = None)
 
+    def perform_update(self):
+        archive = Archive.ZipFromURL(self.archive_url)
+
+        for name in archive.Names():
+            data    = archive[name]
+            parts   = name.split('/')[1:]
+            shifted = '/'.join(parts)
+            full    = Core.storage.join_path(Core.bundle_path, shifted)
+
+            if '/.' in name: continue
+
+            if full.endswith('/'):
+                Core.storage.ensure_dirs(full)
+            else:
+                Core.storage.save(full, data)
+
+        del archive
+
 instance = None
 def init(**kwargs):
     global instance
