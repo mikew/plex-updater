@@ -15,11 +15,6 @@ class TestUpdater(plex_nose.TestCase):
 
         test()
 
-#checks once every n
-#calls check_update
-#returns dialog
-#button present when update
-
 class TestIntegrationStrategy():
     def __init__(self, foo):
         self.foo = foo
