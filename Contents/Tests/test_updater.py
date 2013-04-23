@@ -73,7 +73,9 @@ updater.init(foo = "bar")
 
     def test_update_if_available():
         updater.update_if_available()
+        saved_ago = (Datetime.Now() - updater.updated_at()).seconds
         ok_(updater.instance.performed)
+        ok_(saved_ago < 1)
 
 #GithubUpdateStrategy
 #can update code
