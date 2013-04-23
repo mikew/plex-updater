@@ -13,7 +13,7 @@ class GithubStrategy(object):
         feed    = RSS.FeedFromURL(self.atom_url)
         updated = Datetime.ParseDate(feed.entries[0].updated)
 
-        return updated.replace(tzinfo = None)
+        return updated
 
     def perform_update(self):
         archive = Archive.ZipFromURL(self.archive_url)
@@ -64,7 +64,7 @@ def PerformUpdate():
 def update_if_available():
     if update_available():
         instance.perform_update()
-        Dict[UPDATED_AT] = Datetime.Now()
+        Dict[UPDATED_AT] = instance.updated_at
         Dict.Save()
 
 def add_button_to(container, **kwargs):

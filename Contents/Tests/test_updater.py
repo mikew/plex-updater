@@ -115,7 +115,7 @@ class TestGithubStrategy(plex_nose.TestCase):
             subject = updater.GithubStrategy('owner/repo')
             actual = subject.updated_at
             expected = datetime.datetime(2013, 4, 14,
-                    12, 28, 1, 0)
+                    12, 28, 1, 0, actual.tzinfo)
 
             eq_(actual, expected)
         test()

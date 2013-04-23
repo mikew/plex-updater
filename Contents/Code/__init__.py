@@ -15,3 +15,8 @@ def MainMenu():
     updater.add_button_to(container)
 
     return container
+
+@route('%s/reset' % PLUGIN_PREFIX)
+def ResetDict():
+    Dict.Reset()
+    Dict.Save()
