@@ -11,7 +11,7 @@ in your `Contents/Code/__init__.py` add:
 
 ```python
 import updater
-updater.init('owner/repo', 'branch') # branch defaults to master
+updater.init(repo = 'owner/repo', branch = 'branch') # branch defaults to master
 
 def MainMenu():
     container = ObjectContainer()
@@ -29,7 +29,7 @@ something that calls back to `updater.PerformUpdate`:
 
 ```python
 import updater
-updater.init('owner/repo')
+updater.init(repo = 'owner/repo')
 
 def MainMenu():
     container = ObjectContainer()
