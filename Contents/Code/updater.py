@@ -33,6 +33,7 @@ class GithubStrategy(object):
 
         del archive
 
+strategy = GithubStrategy
 instance = None
 def init(**kwargs):
     global instance
