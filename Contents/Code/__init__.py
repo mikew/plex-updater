@@ -9,3 +9,10 @@ def Start():
 
 def ValidatePrefs():
     pass
+
+@handler(PLUGIN_PREFIX, 'plex-updater')
+def MainMenu():
+    container = ObjectContainer()
+    updater.add_button_to(container)
+
+    return container
