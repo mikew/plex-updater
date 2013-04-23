@@ -10,7 +10,8 @@ class GithubStrategy(object):
 
     @property
     def updated_at(self):
-        feed    = RSS.FeedFromURL(self.atom_url)
+        ttl     = 43200 # 12 hours
+        feed    = RSS.FeedFromURL(self.atom_url, cacheTime = ttl)
         updated = Datetime.ParseDate(feed.entries[0].updated)
 
         return updated.replace(tzinfo = None)
