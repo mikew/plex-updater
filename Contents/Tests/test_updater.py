@@ -2,7 +2,12 @@ import plex_nose
 
 class TestUpdater(plex_nose.TestCase):
     def test_updated_at():
-        eq_(updater.updated_at(), None)
+        import mock
+        @mock.patch.dict(updater.Dict, {updater.UPDATED_AT: None})
+        def test():
+            eq_(updater.updated_at(), None)
+
+        test()
 
     def test_updated_at_when_updated():
         import mock
@@ -46,7 +51,7 @@ updater.init(foo = "bar")
         subject = container.objects[0]
 
         eq_(len(container), 1)
-        eqL_(subject.title, 'updater.update')
+        eqL_(subject.title, 'updater.label.update-now')
         eqcb_(subject.key, updater.PerformUpdate)
 
     def test_add_button_to_when_no_update():
@@ -61,6 +66,11 @@ updater.init(foo = "bar")
 
         eq_(len(container), 0)
 
+    def test_PerformUpdate_returns_dialog():
+        container = updater.PerformUpdate()
+        eqL_(container.header, 'updater.label.updating')
+        eqL_(container.message, 'updater.response.updating')
+
     def test_update_if_available():
         updater.update_if_available()
         ok_(updater.instance.performed)
@@ -72,6 +82,7 @@ class TestGithubStrategy(plex_nose.TestCase):
     def setup_class(cls):
         plex_nose.publish_local_file('Contents/Tests/github-archive.zip',
                 name = 'example_archive')
+
         plex_nose.publish_local_file('Contents/Tests/github-atom.xml',
                 name = 'atom_feed')
 
@@ -110,6 +121,15 @@ class TestGithubStrategy(plex_nose.TestCase):
     def test_perform_update_extracts_code():
         import mock
 
+        # example_archive structure:
+        # channel.bundle/
+        # channel.bundle/.hidden
+        # channel.bundle/.hidden-dir/
+        # channel.bundle/.hidden-dir/file
+        # channel.bundle/dir/
+        # channel.bundle/dir/file
+        # channel.bundle/file
+
         @mock.patch.object(Archive, 'ZipFromURL', return_value = Archive.Zip(example_archive))
         @mock.patch.object(Core.storage, 'ensure_dirs')
         @mock.patch.object(Core.storage, 'save')
@@ -118,19 +138,22 @@ class TestGithubStrategy(plex_nose.TestCase):
             subject = updater.GithubStrategy('owner/repo')
             subject.perform_update()
 
+            new_files = file_mock.call_args_list
+            new_dirs  = dir_mock.call_args_list
+
             # makes dirs
-            ok_(call(Core.bundle_path + '/') in dir_mock.call_args_list)
-            ok_(call(Core.bundle_path + '/dir/') in dir_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/') in new_dirs)
+            ok_(call(Core.bundle_path + '/dir/') in new_dirs)
 
             # makes files
-            ok_(call(Core.bundle_path + '/file', '') in file_mock.call_args_list)
-            ok_(call(Core.bundle_path + '/dir/file', '') in file_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/file', '') in new_files)
+            ok_(call(Core.bundle_path + '/dir/file', '') in new_files)
 
             # skips hidden dirs
-            ok_(call(Core.bundle_path + '/hidden-dir/') not in dir_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/hidden-dir/') not in new_dirs)
 
             # skips hidden files
-            ok_(call(Core.bundle_path + '/.hidden', '') not in file_mock.call_args_list)
-            ok_(call(Core.bundle_path + '/.hidden-dir/file', '') not in file_mock.call_args_list)
+            ok_(call(Core.bundle_path + '/.hidden', '') not in new_files)
+            ok_(call(Core.bundle_path + '/.hidden-dir/file', '') not in new_files)
 
         test()

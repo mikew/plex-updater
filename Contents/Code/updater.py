@@ -20,8 +20,8 @@ class GithubStrategy(object):
 
         for name in archive.Names():
             data    = archive[name]
-            parts   = name.split('/')[1:]
-            shifted = '/'.join(parts)
+            parts   = name.split('/')
+            shifted = Core.storage.join_path(*parts[1:])
             full    = Core.storage.join_path(Core.bundle_path, shifted)
 
             if '/.' in name: continue
@@ -56,15 +56,20 @@ def update_available():
 def PerformUpdate():
     @spawn
     def inner(): update_if_available()
-    return ObjectContainer(header = 'Updating', message = 'Please wait while updates are being applied.')
+    return ObjectContainer(
+        header  = L('updater.label.updating'),
+        message = L('updater.response.updating')
+    )
 
 def update_if_available():
     if update_available():
         instance.perform_update()
+        Dict[UPDATED_AT] = Datetime.Now()
+        Dict.Save()
 
 def add_button_to(container, **kwargs):
     if update_available():
         container.add(DirectoryObject(
-            title = L('updater.update'),
+            title = L('updater.label.update-now'),
             key   = Callback(PerformUpdate)
         ))
