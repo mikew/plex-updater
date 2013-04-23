@@ -52,6 +52,7 @@ def update_available():
     else:
         return last_updated < instance.updated_at
 
+@route('%s/_update' % PLUGIN_PREFIX)
 def PerformUpdate():
     @spawn
     def inner(): update_if_available()
