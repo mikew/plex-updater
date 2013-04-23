@@ -53,6 +53,11 @@ def update_available():
         return last_updated < instance.updated_at
 
 def PerformUpdate():
+    @spawn
+    def inner(): update_if_available()
+    return ObjectContainer(header = 'Updating', message = 'Please wait while updates are being applied.')
+
+def update_if_available():
     if update_available():
         instance.perform_update()
 

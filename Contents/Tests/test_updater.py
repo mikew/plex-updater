@@ -61,8 +61,8 @@ updater.init(foo = "bar")
 
         eq_(len(container), 0)
 
-    def test_PerformUpdate_calls_strategy_update():
-        updater.PerformUpdate()
+    def test_update_if_available():
+        updater.update_if_available()
         ok_(updater.instance.performed)
 
 #GithubUpdateStrategy
