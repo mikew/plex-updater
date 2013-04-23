@@ -142,20 +142,22 @@ class TestGithubStrategy(plex_nose.TestCase):
 
             new_files = file_mock.call_args_list
             new_dirs  = dir_mock.call_args_list
+            def bp(*a):
+                return Core.storage.join_path(Core.bundle_path, *a)
 
             # makes dirs
-            ok_(call(Core.bundle_path + '/') in new_dirs)
-            ok_(call(Core.bundle_path + '/dir/') in new_dirs)
+            ok_(call(bp('')) in new_dirs)
+            ok_(call(bp('dir', '')) in new_dirs)
 
             # makes files
-            ok_(call(Core.bundle_path + '/file', '') in new_files)
-            ok_(call(Core.bundle_path + '/dir/file', '') in new_files)
+            ok_(call(bp('file'), '') in new_files)
+            ok_(call(bp('dir', 'file'), '') in new_files)
 
             # skips hidden dirs
-            ok_(call(Core.bundle_path + '/hidden-dir/') not in new_dirs)
+            ok_(call(bp('.hidden-dir', '')) not in new_dirs)
 
             # skips hidden files
-            ok_(call(Core.bundle_path + '/.hidden', '') not in new_files)
-            ok_(call(Core.bundle_path + '/.hidden-dir/file', '') not in new_files)
+            ok_(call(bp('.hidden'), '') not in new_files)
+            ok_(call(bp('.hidden-dir', 'file'), '') not in new_files)
 
         test()
