@@ -63,9 +63,9 @@ def PerformUpdate():
 
 def update_if_available():
     if update_available():
-        instance.perform_update()
         Dict[UPDATED_AT] = instance.updated_at
         Dict.Save()
+        instance.perform_update()
 
 def add_button_to(container, **kwargs):
     if update_available():
