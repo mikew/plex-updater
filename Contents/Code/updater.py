@@ -13,7 +13,7 @@ class GithubStrategy(object):
         feed    = RSS.FeedFromURL(self.atom_url)
         updated = Datetime.ParseDate(feed.entries[0].updated)
 
-        return updated
+        return updated.replace(tzinfo = None)
 
     def perform_update(self):
         archive = Archive.ZipFromURL(self.archive_url)
