@@ -40,6 +40,8 @@ class TestIntegration(plex_nose.TestCase):
         plex_nose.core.sandbox.execute("""
 updater.strategy = TestIntegrationStrategy
 updater.init(foo = "bar")
+def PerformUpdate():
+    return updater.PerformUpdate()
 """)
 
     def test_init_calls_strategy():
@@ -47,12 +49,12 @@ updater.init(foo = "bar")
 
     def test_add_button_to():
         container = ObjectContainer()
-        updater.add_button_to(container)
+        updater.add_button_to(container, PerformUpdate)
         subject = container.objects[0]
 
         eq_(len(container), 1)
         eqL_(subject.title, 'updater.label.update-now')
-        eqcb_(subject.key, updater.PerformUpdate)
+        eqcb_(subject.key, PerformUpdate)
 
     def test_add_button_to_when_no_update():
         import mock
@@ -60,8 +62,9 @@ updater.init(foo = "bar")
         @mock.patch.object(updater, 'update_available', return_value = False)
         def test(*a):
             container = ObjectContainer()
-            updater.add_button_to(container)
+            updater.add_button_to(container, PerformUpdate)
             return container
+
         container = test()
 
         eq_(len(container), 0)
